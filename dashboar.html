@@ -1,0 +1,231 @@
+<html>
+    <head>
+        <title>SIMS-dashboard</title>
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <style>
+        *{
+    margin: 0;
+    font-family: Arial, Helvetica;
+}
+header{
+    background-color: aliceblue;
+    padding: 20px;
+     display: flex;
+    justify-content: space-between; 
+}
+section{
+    height: 85vh;
+    background-color:wheat;
+    display: flex;
+    
+}
+.man{
+    background-color: black;
+    padding: 60px;
+
+}
+.man>a{
+    text-decoration: none;
+    padding-bottom:20px;
+    margin-left:0px;
+
+   
+}
+.over:hover{
+    color: white;
+    background-color: rgb(255, 162, 0);
+border-radius: 5px;
+border: none;
+width:px;
+}
+.button-dj{
+    color: rgb(249, 125, 8);
+    border-radius: 10px;
+    border: none;
+    padding:8px;
+    cursor: pointer;
+   
+}
+.marry{
+    padding: 30px;
+   margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    margin-left: 30px;
+   width:200px;
+
+}
+.cards{
+    width:200px;
+    padding: 30px;
+     margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    margin-left: 30px;
+}
+
+.ok{
+    width:200px;
+   padding: 30px;
+   margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    margin-left:30px;
+ 
+}
+.over{
+color: white;
+width: 300px;
+}
+.yes{
+    padding-right: 10px;
+align-items: center;
+display: flex;
+padding: 20px;
+}
+.money{
+    align-items: center; 
+   display: flex;
+     justify-content: space-between;
+}
+.search>input{
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    width: 200px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin-left: 50px;
+    padding-left: 75px;
+    margin-right:19.6px;
+}
+.T-1{
+    background-color: antiquewhite;
+    padding-left: 75px;
+    margin-right: 19.6px;
+    margin-left: 50px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.table{
+    background-color: antiquewhite;
+    margin-left: 50px;
+    margin-right: 19.6px;
+    padding: 5%;
+  
+
+}
+.nnn{
+    
+}
+
+    </style>
+    <body>
+        
+        <header>
+
+       <div>
+
+      <h1>SIMS</h1>
+      <P>Stock Investory Managment System</P>
+     </div>
+     <div>
+
+      <h4>john deo</h4>
+      <P>administrator</P>
+      <button class="button-dj">JD</button>
+      <button style="background-color: brown;color:     a   rgb(66, 198, 255);border: none;border-radius: 5px;padding: 10px;cursor: pointer;" onclick=""><a style="text-decoration: none; color: yellow;" href="login.html">Login</a></button>
+     </div>
+     </header>
+        <section>
+     <aside class="man">
+     <a class="over" href="#"> dashboard</a><br><br><br>
+    <a class="over" href="product.html">product</a><br><br><br>
+     <a class="over" href="#">reports</a><br><br><br>
+     <a class="over" href="#">setting</a><br><br><br>
+
+ </aside>
+ <div> 
+    <h1>Dashboard</h1>
+    <p>overview of your Investory status</p>
+  <div class="yes">
+
+
+ <div class="marry">
+
+   <p>TotalProduct</p>
+  <h1>217</h1>
+   <p>+12 this monthn</p>
+ </div>
+ <div class="cards">
+
+     <p>In Stock</p>
+     <h1>401</h1>
+    <p>87.7% of total</p>
+      </div>
+     <div class="ok">
+
+       <p> Outof Stock</p>
+   <h1>100</h1>
+   <p>17.3% of Total</p>
+ </div>
+ </div>
+ <div class="overlay">
+    <div class="search">
+        
+   <h1>Product</h1>
+     <input type="search" placeholder="search">
+ </div>
+    <div class="table">   
+<table>
+    <thead>
+        <div class="nnn">
+        <tr>
+            <th>PRODUCT ID</th>
+            <th>PRODUCT NAME</th>
+            <th>CATEGORY</th>
+            <th>QUANTITY</th>
+            <th>PRICE</th>
+            <th>STATUS</th>
+        </tr>
+        </div>
+    </thead><br><br>
+    <tbody class="nnn">
+        <tr>
+            <td>PRD-011</td>
+            <td><h4>wireless Keyboard</h4></td>
+            <td>electronics</td>
+            <td><h4>50</h4></td>
+            <td><h4>$69.67</h4></td>
+            <td><button style="border: none;border-radius: 6px;color: green;background-color:aliceblue;cursor: pointer;">In Stock</button></td>
+        </tr>
+        <div>
+        <tr>
+            <td>PRD-002</td>
+            <td>USB-C Hub Adapter</td>
+            <td>Accessories</td>
+            <td><h4>0</h4></td>
+            <td><h4>$29.99</h4></td>
+            <td><button style="border-radius: 6px;border: none;color: red;background-color:aliceblue ;cursor: pointer;">Out of Stock</button></td>
+        </tr> 
+        </div>
+        </tbody>
+</table>
+ </div>
+</section>
+    </body>
+</html>
